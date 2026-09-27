@@ -9,7 +9,8 @@
         "source": {
           "type": "git",
           "url": "https://github.com/unified-systems-com/tap-plugin-administrivia",
-          "rev": "v0.1.1"
+          "rev": "v0.1.1",
+          "commit": "8348716059e8b635bc8cf30608dd94d0239bf0f9"
         },
         "note": "Self, pinned like any app-of-apps record — the CONSUMER (plugin-ci boot-and-test, or `spawn --dev-plugins administrivia`) substitutes the checkout under test via tap.dev_workspace (req-boot-bootstrap-ci-record-4). Booting this record unflipped runs the pinned revision."
       }
