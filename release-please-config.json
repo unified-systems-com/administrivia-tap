@@ -6,7 +6,7 @@
   "bump-patch-for-minor-pre-major": true,
   "packages": {
     ".": {
-      "package-name": "tap-plugin-administrivia",
+      "package-name": "administrivia-tap",
       "extra-files": [
         {
           "type": "generic",
