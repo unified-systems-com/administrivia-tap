@@ -79,3 +79,21 @@ def test_panel_denies_caller_without_plugins_read() -> None:
     _authorize("tap_viewer")  # grid.read only
     with pytest.raises(AuthzError):
         PluginStatusPanelType.get_view_context(_panel_stub(), RequestFactory().get("/"))
+
+
+def test_panel_row_url_matches_the_link_column() -> None:
+    """Whole-row click (raw-mode `_url`) and the Plugin column's own link formatter must agree.
+
+    Two independent things point at the same detail page — the link formatter's
+    `href_template` and each row's own `_url` — so a row click and a name-cell click land on
+    the same page, never two different ones (req-administrivia-v0-plugin-status-row-click).
+    """
+    _authorize("tap_admin")
+    ctx = PluginStatusPanelType.get_view_context(_panel_stub(), RequestFactory().get("/"))
+    rows = json.loads(ctx["table_nodes_json"])
+    columns = json.loads(ctx["table_columns_json"])
+    slug_col = next(c for c in columns if c["field"] == "slug")
+    href_template = slug_col["formatter_params"]["href_template"]
+    assert rows  # at least one plugin (administrivia itself) is always on the roster
+    for row in rows:
+        assert row["_url"] == href_template.format(slug=row["slug"])

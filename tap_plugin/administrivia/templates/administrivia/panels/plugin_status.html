@@ -13,8 +13,12 @@
                class="tap-table-filter rounded border border-slate-300 bg-white px-2 py-0.5 text-sm focus:outline-none focus:ring-1 focus:ring-slate-400">
     </div>
 
-    {# Tabulator mount + embedded data/columns payloads (panel-table.js reads these by id). #}
+    {# Tabulator mount + embedded data/columns payloads (panel-table.js reads these by id).
+       data-tap-table-mode="raw": rows are self-sourced (we build table_nodes_json ourselves, not
+       grid entities), so panel-table.js's node-mode entity_type/entity_id row-click routing has
+       nothing to key on. Raw mode instead wires up each row's own `_url` key. #}
     <div data-tap-table-mount
+         data-tap-table-mode="raw"
          data-tap-table-panel-id="{{ panel.entity_id }}"
          id="tap-table-mount-{{ panel.entity_id }}"
          class="tap-table-container"></div>
