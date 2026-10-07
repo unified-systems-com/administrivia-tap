@@ -74,6 +74,10 @@ def _row_for_plugin(p: dict[str, Any]) -> dict[str, Any]:
     if p["commit"]:
         version = f"{version} @{p['commit'][:8]}"
     return {
+        # Whole-row navigation (panel-table.js raw mode, req-administrivia-v0-plugin-status-row-click):
+        # same target as the Plugin column's own link formatter, so a click anywhere in the row and a
+        # click on the name cell land on the same page — never two different destinations.
+        "_url": f"/administrivia/plugin?slug={p['slug']}",
         "slug": p["slug"],
         "name": p["name"],
         "version": version,
