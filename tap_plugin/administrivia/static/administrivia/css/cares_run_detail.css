@@ -10,10 +10,10 @@
 
 .tap-cares-run__error {
     padding: 16px;
-    background: #fef2f2;
-    border: 1px solid #fca5a5;
+    background: rgb(var(--tap-red-50));
+    border: 1px solid rgb(var(--tap-red-300));
     border-radius: 6px;
-    color: #7f1d1d;
+    color: rgb(var(--tap-red-900));
 }
 
 .tap-cares-run__header {
@@ -26,16 +26,16 @@
 .tap-cares-run__name {
     margin: 0 0 4px 0;
     font-size: 20px;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
     font-weight: 600;
 }
 .tap-cares-run__collector {
     margin: 0;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     font-size: 13px;
 }
 .tap-cares-run__collector a {
-    color: #1d4ed8;
+    color: rgb(var(--tap-blue-700));
     text-decoration: none;
 }
 .tap-cares-run__collector a:hover {
@@ -45,17 +45,17 @@
     margin-left: 8px;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
-    background: #f1f5f9;
+    background: rgb(var(--tap-slate-100));
     padding: 1px 6px;
     border-radius: 3px;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
 }
 
 .tap-cares-run__meta {
     margin: 0 0 16px 0;
     padding: 12px 16px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: rgb(var(--tap-slate-50));
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -68,27 +68,27 @@
     gap: 2px;
 }
 .tap-cares-run__meta-row--err dd {
-    color: #7f1d1d;
+    color: rgb(var(--tap-red-900));
 }
 .tap-cares-run__meta dt {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
 }
 .tap-cares-run__meta dd {
     margin: 0;
     font-size: 13px;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
 }
 .tap-cares-run__meta code {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 12px;
-    color: #1e293b;
-    background: #fff;
+    color: rgb(var(--tap-slate-800));
+    background: rgb(var(--tap-white));
     padding: 1px 4px;
     border-radius: 3px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     word-break: break-all;
 }
 
@@ -100,9 +100,9 @@
 }
 .tap-cares-run__count {
     padding: 10px 14px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
-    background: #f8fafc;
+    background: rgb(var(--tap-slate-50));
     text-align: center;
     font-variant-numeric: tabular-nums;
 }
@@ -110,24 +110,24 @@
     display: block;
     font-size: 22px;
     font-weight: 700;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
 }
 .tap-cares-run__count-label {
     display: block;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     margin-top: 2px;
 }
-.tap-cares-run__count--err   { background: #fef2f2; border-color: #fecaca; }
-.tap-cares-run__count--err   .tap-cares-run__count-num { color: #991b1b; }
-.tap-cares-run__count--warn  { background: #fffbeb; border-color: #fde68a; }
-.tap-cares-run__count--warn  .tap-cares-run__count-num { color: #92400e; }
-.tap-cares-run__count--info  { background: #eff6ff; border-color: #bfdbfe; }
-.tap-cares-run__count--info  .tap-cares-run__count-num { color: #1e40af; }
-.tap-cares-run__count--batch { background: #f5f3ff; border-color: #ddd6fe; }
-.tap-cares-run__count--batch .tap-cares-run__count-num { color: #5b21b6; }
+.tap-cares-run__count--err   { background: rgb(var(--tap-red-50)); border-color: rgb(var(--tap-red-200)); }
+.tap-cares-run__count--err   .tap-cares-run__count-num { color: rgb(var(--tap-red-800)); }
+.tap-cares-run__count--warn  { background: rgb(var(--tap-amber-50)); border-color: rgb(var(--tap-amber-200)); }
+.tap-cares-run__count--warn  .tap-cares-run__count-num { color: rgb(var(--tap-amber-800)); }
+.tap-cares-run__count--info  { background: rgb(var(--tap-blue-50)); border-color: rgb(var(--tap-blue-200)); }
+.tap-cares-run__count--info  .tap-cares-run__count-num { color: rgb(var(--tap-blue-800)); }
+.tap-cares-run__count--batch { background: rgb(var(--tap-indigo-50)); border-color: rgb(var(--tap-indigo-200)); }
+.tap-cares-run__count--batch .tap-cares-run__count-num { color: rgb(var(--tap-indigo-800)); }
 
 .tap-cares-run__section {
     margin-bottom: 20px;
@@ -137,7 +137,7 @@
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     font-weight: 600;
 }
 
@@ -152,12 +152,12 @@
 .tap-cares-run__entry {
     padding: 10px 12px;
     border-radius: 5px;
-    border: 1px solid #e2e8f0;
-    background: #fff;
+    border: 1px solid rgb(var(--tap-slate-200));
+    background: rgb(var(--tap-white));
 }
-.tap-cares-run__entry--err  { border-left: 3px solid #ef4444; background: #fef2f2; }
-.tap-cares-run__entry--warn { border-left: 3px solid #f59e0b; background: #fffbeb; }
-.tap-cares-run__entry--info { border-left: 3px solid #3b82f6; background: #f8fafc; }
+.tap-cares-run__entry--err  { border-left: 3px solid rgb(var(--tap-red-500)); background: rgb(var(--tap-red-50)); }
+.tap-cares-run__entry--warn { border-left: 3px solid rgb(var(--tap-amber-500)); background: rgb(var(--tap-amber-50)); }
+.tap-cares-run__entry--info { border-left: 3px solid rgb(var(--tap-blue-500)); background: rgb(var(--tap-slate-50)); }
 
 .tap-cares-run__entry-head {
     display: flex;
@@ -169,15 +169,15 @@
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
     font-weight: 600;
-    background: #fff;
-    border: 1px solid #cbd5e1;
+    background: rgb(var(--tap-white));
+    border: 1px solid rgb(var(--tap-slate-300));
     padding: 1px 6px;
     border-radius: 3px;
-    color: #334155;
+    color: rgb(var(--tap-slate-700));
 }
 .tap-cares-run__entry-message {
     font-size: 13px;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
     flex: 1 1 auto;
     min-width: 0;
     word-break: break-word;
@@ -185,7 +185,7 @@
 .tap-cares-run__entry-site {
     margin-top: 4px;
     font-size: 11px;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
 }
 .tap-cares-run__entry-site code {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -196,15 +196,17 @@
 .tap-cares-run__entry-ctx summary {
     cursor: pointer;
     font-size: 11px;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 .tap-cares-run__entry-ctx pre {
     margin: 6px 0 0 0;
     padding: 8px 10px;
-    background: #0f172a;
-    color: #e2e8f0;
+    /* Fixed dark in both themes (a log console); the border keeps its edge visible on a dark page. */
+    background: rgb(15 23 42);
+    color: rgb(226 232 240);
+    border: 1px solid rgb(71 85 105);
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
     line-height: 1.4;
@@ -218,7 +220,7 @@
 .tap-cares-run__batches-group h4 {
     margin: 0 0 4px 0;
     font-size: 12px;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     font-weight: 600;
 }
 .tap-cares-run__batches {
@@ -232,20 +234,20 @@
 .tap-cares-run__batches code {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
-    background: #f1f5f9;
+    background: rgb(var(--tap-slate-100));
     padding: 2px 6px;
     border-radius: 3px;
-    color: #1e293b;
-    border: 1px solid #e2e8f0;
+    color: rgb(var(--tap-slate-800));
+    border: 1px solid rgb(var(--tap-slate-200));
 }
 
 .tap-cares-run__empty {
     padding: 16px;
     text-align: center;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     font-size: 13px;
-    background: #f8fafc;
-    border: 1px dashed #cbd5e1;
+    background: rgb(var(--tap-slate-50));
+    border: 1px dashed rgb(var(--tap-slate-300));
     border-radius: 6px;
 }
 
@@ -254,7 +256,7 @@
     font-size: 13px;
 }
 .tap-cares-run__back a {
-    color: #1d4ed8;
+    color: rgb(var(--tap-blue-700));
     text-decoration: none;
 }
 .tap-cares-run__back a:hover {
@@ -271,11 +273,11 @@
     text-transform: lowercase;
     letter-spacing: 0.02em;
 }
-.tap-cares-pill--ok      { background: #d1fae5; color: #065f46; }
-.tap-cares-pill--warn    { background: #fef3c7; color: #92400e; }
-.tap-cares-pill--err     { background: #fee2e2; color: #991b1b; }
-.tap-cares-pill--running { background: #dbeafe; color: #1e40af; }
-.tap-cares-pill--neutral { background: #e2e8f0; color: #334155; }
+.tap-cares-pill--ok      { background: rgb(var(--tap-green-100)); color: rgb(var(--tap-green-800)); }
+.tap-cares-pill--warn    { background: rgb(var(--tap-amber-100)); color: rgb(var(--tap-amber-800)); }
+.tap-cares-pill--err     { background: rgb(var(--tap-red-100)); color: rgb(var(--tap-red-800)); }
+.tap-cares-pill--running { background: rgb(var(--tap-blue-100)); color: rgb(var(--tap-blue-800)); }
+.tap-cares-pill--neutral { background: rgb(var(--tap-slate-200)); color: rgb(var(--tap-slate-700)); }
 
 /* Batch references rendered as shared batch cards (tap_web batch-card partial). */
 .tap-cares-run__batch-cards {

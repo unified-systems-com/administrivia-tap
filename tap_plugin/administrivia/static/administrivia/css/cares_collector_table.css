@@ -16,14 +16,14 @@
     font-variant-numeric: tabular-nums;
 }
 .tap-cares-collectors__flash--ok {
-    background: #ecfdf5;
-    border: 1px solid #6ee7b7;
-    color: #065f46;
+    background: rgb(var(--tap-green-50));
+    border: 1px solid rgb(var(--tap-green-300));
+    color: rgb(var(--tap-green-800));
 }
 .tap-cares-collectors__flash--err {
-    background: #fef2f2;
-    border: 1px solid #fca5a5;
-    color: #7f1d1d;
+    background: rgb(var(--tap-red-50));
+    border: 1px solid rgb(var(--tap-red-300));
+    color: rgb(var(--tap-red-900));
 }
 /* The synchronous inline self-test result block was removed when the table
  * migrated to the async self_test_only contract (the Self-test button now
@@ -40,36 +40,36 @@
 .tap-cares-summary__tile {
     flex: 1 1 120px;
     padding: 10px 14px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
-    background: #f8fafc;
+    background: rgb(var(--tap-slate-50));
 }
 .tap-cares-summary__tile--warn {
-    border-color: #fbbf24;
-    background: #fffbeb;
+    border-color: rgb(var(--tap-amber-400));
+    background: rgb(var(--tap-amber-50));
 }
 .tap-cares-summary__tile--err {
-    border-color: #fca5a5;
-    background: #fef2f2;
+    border-color: rgb(var(--tap-red-300));
+    background: rgb(var(--tap-red-50));
 }
 .tap-cares-summary__label {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     margin-bottom: 4px;
 }
 .tap-cares-summary__value {
     font-size: 22px;
     font-weight: 600;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
     font-variant-numeric: tabular-nums;
 }
 
 /* ----- table ----- */
 .tap-cares-collectors__table-wrap {
     overflow-x: auto;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
 }
 .tap-cares-collectors__table {
@@ -80,9 +80,9 @@
 .tap-cares-collectors__table thead th {
     text-align: left;
     padding: 8px 10px;
-    background: #f1f5f9;
-    border-bottom: 1px solid #e2e8f0;
-    color: #475569;
+    background: rgb(var(--tap-slate-100));
+    border-bottom: 1px solid rgb(var(--tap-slate-200));
+    color: rgb(var(--tap-slate-600));
     font-weight: 600;
     font-size: 11px;
     text-transform: uppercase;
@@ -92,18 +92,18 @@
 }
 .tap-cares-collectors__table tbody td {
     padding: 8px 10px;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid rgb(var(--tap-slate-100));
     vertical-align: top;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
 }
 .tap-cares-collectors__row--unavailable {
-    background: #fffbeb;
+    background: rgb(var(--tap-amber-50));
 }
 .tap-cares-collectors__row--unavailable td {
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
 }
 .tap-cares-collectors__name a {
-    color: #1d4ed8;
+    color: rgb(var(--tap-blue-700));
     text-decoration: none;
     font-weight: 600;
 }
@@ -112,7 +112,7 @@
 }
 .tap-cares-collectors__desc {
     min-width: 240px;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     line-height: 1.45;
 }
 .tap-cares-collectors__scope {
@@ -123,8 +123,8 @@
     white-space: nowrap;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
-    color: #475569;
-    background: #f1f5f9;
+    color: rgb(var(--tap-slate-600));
+    background: rgb(var(--tap-slate-100));
     padding: 1px 4px;
     border-radius: 3px;
     vertical-align: middle;
@@ -135,7 +135,7 @@
      * keeps it from running away on very wide monitors. Wraps, never truncates. */
     min-width: 300px;
     max-width: 440px;
-    color: #334155;
+    color: rgb(var(--tap-slate-700));
     font-size: 12px;
     overflow-wrap: anywhere;
 }
@@ -155,12 +155,12 @@
     text-transform: lowercase;
     letter-spacing: 0.02em;
 }
-.tap-cares-pill--ok      { background: #d1fae5; color: #065f46; }
-.tap-cares-pill--warn    { background: #fef3c7; color: #92400e; }
-.tap-cares-pill--err     { background: #fee2e2; color: #991b1b; }
-.tap-cares-pill--running { background: #dbeafe; color: #1e40af; }
-.tap-cares-pill--neutral { background: #e2e8f0; color: #334155; }
-.tap-cares-pill--idle    { background: #f1f5f9; color: #64748b; }
+.tap-cares-pill--ok      { background: rgb(var(--tap-green-100)); color: rgb(var(--tap-green-800)); }
+.tap-cares-pill--warn    { background: rgb(var(--tap-amber-100)); color: rgb(var(--tap-amber-800)); }
+.tap-cares-pill--err     { background: rgb(var(--tap-red-100)); color: rgb(var(--tap-red-800)); }
+.tap-cares-pill--running { background: rgb(var(--tap-blue-100)); color: rgb(var(--tap-blue-800)); }
+.tap-cares-pill--neutral { background: rgb(var(--tap-slate-200)); color: rgb(var(--tap-slate-700)); }
+.tap-cares-pill--idle    { background: rgb(var(--tap-slate-100)); color: rgb(var(--tap-slate-600)); }
 
 /* ----- run button ----- */
 .tap-cares-collectors__form {
@@ -169,8 +169,8 @@
 }
 .tap-cares-collectors__run-btn,
 .tap-cares-collectors__self-test-btn {
-    background: #1d4ed8;
-    color: #fff;
+    background: rgb(29 78 216);
+    color: rgb(255 255 255);
     border: 0;
     border-radius: 4px;
     padding: 5px 14px;
@@ -179,17 +179,17 @@
     cursor: pointer;
 }
 .tap-cares-collectors__self-test-btn {
-    background: #475569;
+    background: rgb(71 85 105);
 }
 .tap-cares-collectors__run-btn:hover:not(:disabled) {
-    background: #1e40af;
+    background: rgb(30 64 175);
 }
 .tap-cares-collectors__self-test-btn:hover:not(:disabled) {
-    background: #334155;
+    background: rgb(51 65 85);
 }
 .tap-cares-collectors__run-btn:disabled {
-    background: #cbd5e1;
-    color: #64748b;
+    background: rgb(var(--tap-slate-300));
+    color: rgb(var(--tap-slate-600));
     cursor: not-allowed;
 }
 
@@ -197,21 +197,21 @@
 .tap-cares-collectors__empty {
     padding: 24px;
     text-align: center;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     font-size: 14px;
-    background: #f8fafc;
-    border: 1px dashed #cbd5e1;
+    background: rgb(var(--tap-slate-50));
+    border: 1px dashed rgb(var(--tap-slate-300));
     border-radius: 6px;
 }
 .tap-cares-collectors__empty code {
-    background: #fff;
+    background: rgb(var(--tap-white));
     padding: 1px 6px;
     border-radius: 3px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     font-size: 12px;
 }
 
 /* The table sits on a sheet a shade off the canvas — translucent white, hairline, small radius — so it
    reads as an object on the page rather than rows painted on the background (George, 2026-09-10; tap's
    canvas is taupe since tap PR# 414 and the standard tables got the same sheet). */
-.tap-cares-collectors__table-wrap { background: rgba(255, 255, 255, .55); border: 1px solid rgba(128, 128, 128, .22); border-radius: 3px; }
+.tap-cares-collectors__table-wrap { background: rgb(var(--tap-white) / 0.55); border: 1px solid rgb(var(--tap-slate-400) / 0.22); border-radius: 3px; }

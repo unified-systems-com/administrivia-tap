@@ -21,20 +21,20 @@
     text-transform: lowercase;
     letter-spacing: 0.02em;
 }
-.tap-cares-pill--ok      { background: #d1fae5; color: #065f46; }
-.tap-cares-pill--warn    { background: #fef3c7; color: #92400e; }
-.tap-cares-pill--err     { background: #fee2e2; color: #991b1b; }
-.tap-cares-pill--running { background: #dbeafe; color: #1e40af; }
-.tap-cares-pill--neutral { background: #e2e8f0; color: #334155; }
-.tap-cares-pill--idle    { background: #f1f5f9; color: #64748b; }
+.tap-cares-pill--ok      { background: rgb(var(--tap-green-100)); color: rgb(var(--tap-green-800)); }
+.tap-cares-pill--warn    { background: rgb(var(--tap-amber-100)); color: rgb(var(--tap-amber-800)); }
+.tap-cares-pill--err     { background: rgb(var(--tap-red-100)); color: rgb(var(--tap-red-800)); }
+.tap-cares-pill--running { background: rgb(var(--tap-blue-100)); color: rgb(var(--tap-blue-800)); }
+.tap-cares-pill--neutral { background: rgb(var(--tap-slate-200)); color: rgb(var(--tap-slate-700)); }
+.tap-cares-pill--idle    { background: rgb(var(--tap-slate-100)); color: rgb(var(--tap-slate-600)); }
 
 /* ----- error ----- */
 .tap-cares-schedule-detail__error {
     padding: 14px 16px;
-    background: #fef2f2;
-    border: 1px solid #fca5a5;
+    background: rgb(var(--tap-red-50));
+    border: 1px solid rgb(var(--tap-red-300));
     border-radius: 6px;
-    color: #7f1d1d;
+    color: rgb(var(--tap-red-900));
 }
 
 /* ----- header ----- */
@@ -48,11 +48,11 @@
 .tap-cares-schedule-detail__name {
     margin: 0 0 6px 0;
     font-size: 22px;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
 }
 .tap-cares-schedule-detail__description {
     margin: 0;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
     line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@
     margin: 24px 0 8px 0;
     font-size: 12px;
     font-weight: 700;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -70,8 +70,8 @@
 .tap-cares-schedule-detail__meta {
     margin: 0;
     padding: 12px 16px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: rgb(var(--tap-slate-50));
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
 }
 .tap-cares-schedule-detail__meta-row {
@@ -82,7 +82,7 @@
     align-items: baseline;
 }
 .tap-cares-schedule-detail__meta-row + .tap-cares-schedule-detail__meta-row {
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid rgb(var(--tap-slate-200));
     padding-top: 8px;
     margin-top: 4px;
 }
@@ -90,26 +90,26 @@
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     font-weight: 600;
 }
 .tap-cares-schedule-detail__meta-row dd {
     margin: 0;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
     font-variant-numeric: tabular-nums;
 }
 .tap-cares-schedule-detail__meta-row code {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 12px;
-    color: #475569;
-    background: #fff;
+    color: rgb(var(--tap-slate-600));
+    background: rgb(var(--tap-white));
     padding: 1px 6px;
     border-radius: 3px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
 }
 .tap-cares-schedule-detail__cron {
-    background: #f1f5f9 !important;
-    border-color: #e2e8f0 !important;
+    background: rgb(var(--tap-slate-100)) !important;
+    border-color: rgb(var(--tap-slate-200)) !important;
 }
 
 /* ----- callout (missing target, etc.) ----- */
@@ -120,13 +120,13 @@
     line-height: 1.5;
 }
 .tap-cares-schedule-detail__callout--err {
-    background: #fef2f2;
-    border: 1px solid #fca5a5;
-    color: #7f1d1d;
+    background: rgb(var(--tap-red-50));
+    border: 1px solid rgb(var(--tap-red-300));
+    color: rgb(var(--tap-red-900));
 }
 .tap-cares-schedule-detail__callout code {
-    background: #fff;
-    border: 1px solid #fca5a5;
+    background: rgb(var(--tap-white));
+    border: 1px solid rgb(var(--tap-red-300));
     padding: 1px 5px;
     border-radius: 3px;
     font-size: 12px;
@@ -135,7 +135,7 @@
 /* ----- fire history table ----- */
 .tap-cares-schedule-detail__history-wrap {
     overflow-x: auto;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgb(var(--tap-slate-200));
     border-radius: 6px;
 }
 .tap-cares-schedule-detail__history {
@@ -146,9 +146,9 @@
 .tap-cares-schedule-detail__history thead th {
     text-align: left;
     padding: 8px 10px;
-    background: #f1f5f9;
-    border-bottom: 1px solid #e2e8f0;
-    color: #475569;
+    background: rgb(var(--tap-slate-100));
+    border-bottom: 1px solid rgb(var(--tap-slate-200));
+    color: rgb(var(--tap-slate-600));
     font-weight: 600;
     font-size: 11px;
     text-transform: uppercase;
@@ -157,16 +157,16 @@
 }
 .tap-cares-schedule-detail__history tbody td {
     padding: 8px 10px;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid rgb(var(--tap-slate-100));
     vertical-align: top;
-    color: #1e293b;
+    color: rgb(var(--tap-slate-800));
     font-variant-numeric: tabular-nums;
 }
 .tap-cares-schedule-detail__history-row--err {
-    background: #fef2f2;
+    background: rgb(var(--tap-red-50));
 }
 .tap-cares-schedule-detail__history-row--warn {
-    background: #fffbeb;
+    background: rgb(var(--tap-amber-50));
 }
 .tap-cares-schedule-detail__slot {
     white-space: nowrap;
@@ -174,7 +174,7 @@
 }
 .tap-cares-schedule-detail__fired-at {
     white-space: nowrap;
-    color: #475569;
+    color: rgb(var(--tap-slate-600));
 }
 .tap-cares-schedule-detail__missed {
     text-align: center;
@@ -182,20 +182,20 @@
 .tap-cares-schedule-detail__missed-badge {
     padding: 1px 6px;
     border-radius: 3px;
-    background: #fef3c7;
-    color: #92400e;
+    background: rgb(var(--tap-amber-100));
+    color: rgb(var(--tap-amber-800));
     font-size: 11px;
 }
 .tap-cares-schedule-detail__summary-cell {
     max-width: 360px;
-    color: #334155;
+    color: rgb(var(--tap-slate-700));
     font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 .tap-cares-schedule-detail__job-link {
-    color: #1d4ed8;
+    color: rgb(var(--tap-blue-700));
     text-decoration: none;
 }
 .tap-cares-schedule-detail__job-link:hover {
@@ -205,7 +205,7 @@
 /* ----- history cap note ----- */
 .tap-cares-schedule-detail__history-cap-note {
     margin: 10px 0 0 0;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     font-size: 12px;
     font-style: italic;
 }
@@ -214,10 +214,10 @@
 .tap-cares-schedule-detail__empty {
     padding: 24px;
     text-align: center;
-    color: #64748b;
+    color: rgb(var(--tap-slate-600));
     font-size: 14px;
-    background: #f8fafc;
-    border: 1px dashed #cbd5e1;
+    background: rgb(var(--tap-slate-50));
+    border: 1px dashed rgb(var(--tap-slate-300));
     border-radius: 6px;
 }
 
@@ -227,7 +227,7 @@
     font-size: 13px;
 }
 .tap-cares-schedule-detail__back a {
-    color: #1d4ed8;
+    color: rgb(var(--tap-blue-700));
     text-decoration: none;
 }
 .tap-cares-schedule-detail__back a:hover {
