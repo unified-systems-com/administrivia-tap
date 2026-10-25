@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.1...v0.2.2) (2026-10-25)
+
+
+### Bug Fixes
+
+* **plugins:** the Plugins page no longer prints a Tabulator template comment ([#34](https://github.com/unified-systems-com/administrivia-tap/issues/34)) ([6abbae4](https://github.com/unified-systems-com/administrivia-tap/commit/6abbae4643ad296bb76c073d37b20ba30a22c986))
+
 ## [0.2.1](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.0...v0.2.1) (2026-10-21)
 
 
