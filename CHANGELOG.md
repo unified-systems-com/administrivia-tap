@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.3...v0.2.4) (2026-11-25)
+
+
+### Bug Fixes
+
+* raise requires_tap to 0.4.9 (GRIFT format "1" documents) ([cf322d9](https://github.com/unified-systems-com/administrivia-tap/commit/cf322d9724de029f10fc552098c828099538ffa9))
+* raise requires_tap to 0.4.9 (GRIFT format "1" documents) ([daf6fa2](https://github.com/unified-systems-com/administrivia-tap/commit/daf6fa2f7dd045c15a3b9bafe8c408a83f9162ad))
+
 ## [0.2.3](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.2...v0.2.3) (2026-11-25)
 
 
