@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.2...v0.2.3) (2026-11-25)
+
+
+### Miscellaneous Chores
+
+* release 0.2.3 ([30a3401](https://github.com/unified-systems-com/administrivia-tap/commit/30a34019635d30403e6cf92cf6c4da6cb5b53242))
+
 ## [0.2.2](https://github.com/unified-systems-com/administrivia-tap/compare/v0.2.1...v0.2.2) (2026-10-25)
 
 
